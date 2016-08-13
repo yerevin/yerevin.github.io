@@ -1,257 +1,97 @@
 $(document).ready(function(){
 
 
+$("#openNav" ).click(function() {
+    $("#mySidenav").css('width', '250px');
+    $("#main").css('margin-right', '250px');
+    $("#openNav").css('display', 'none');
+});
+$(".closebtn").on('click', Close);
+function Close() {
+    $("#mySidenav").css('width', '0px');
+    $("#main").css('margin-right', '0px');
+    $("#openNav").css('display', 'initial');
+}
 
-
-
-  $('#menu').on('click', Menu);
-
-  function Menu() {
-     if($('.menu-screen').hasClass('menu-on')){
-        $('.menuline-1').removeClass('menurot');
-        $('.menuline-3').removeClass('menurot2');
-        $('.menuline-1').addClass('menurot-rev');
-        $('.menuline-2').css('opacity','1');
-        $('.menuline-3').addClass('menurot2-rev');
-        $('.menu-screen').removeClass('menu-on');
-      }
-      else {
-        $('.menuline-1').removeClass('menurot-rev');
-        $('.menuline-3').removeClass('menurot2-rev');
-        $('.menu-screen').addClass('menu-on');
-        $('.menuline-1').addClass('menurot');
-        $('.menuline-2').css('opacity','0');
-        $('.menuline-3').addClass('menurot2');
-      }
-  };
 
    $(".home").click(function (){
-                Menu();
+                Close();
                 $('html, body').animate({
-                    scrollTop: $("#top").offset().top
-                }, 0);
+                    scrollTop: $(".main-bg").offset().top
+                }, 1000);
     });
-   $(".about-me").click(function (){
-                Menu();
+   $(".profil").click(function (){
+                Close();
                 $('html, body').animate({
-                    scrollTop: $(".about").offset().top-200
-                }, 0);
+                    scrollTop: $(".about-section").offset().top
+                }, 1000);
     });
-    $(".portfolio").click(function (){
-                Menu();
+    $(".history").click(function (){
+                Close();
                 $('html, body').animate({
-                    scrollTop: $(".portfolio-box").offset().top
-                }, 0);
+                    scrollTop: $(".about-section-two").offset().top
+                }, 1000);
     });
-   $(".kontakt").click(function (){
-                Menu();
+   $(".eco-products").click(function (){
+                Close();
                 $('html, body').animate({
-                    scrollTop: $(".contact").offset().top
+                    scrollTop: $(".about-section-three").offset().top
+                }, 1000);
+    });
+    $(".about-production").click(function (){
+                Close();
+                $('html, body').animate({
+                    scrollTop: $(".about-section-four").offset().top
+                }, 1000);
+    });
+
+
+
+
+            setTimeout(function() {
+                  $('.logo').addClass('fadeIn');
+                }, 500);
+            setTimeout(function() { 
+                  $('.slogan-line').addClass('sloganLineAnim');
+                }, 1800);
+            setTimeout(function() {
+                  $('.logo').attr('src','img/logo.png');
+                  $('.logo').removeClass('fadeIn'); 
+                  $('.logo').addClass('fadeIn-2');
                 }, 2000);
-    });
+         
+
+
+
+							// init
+							var controller = new ScrollMagic.Controller({
+								globalSceneOptions: {
+									triggerHook: 'onLeave'
+								}
+							});
+
+							// get all slides
+							var slides = document.querySelectorAll("section.panel");
+
+							// create scene for every slide
+							for (var i=0; i<slides.length; i++) {
+								var sceneOne = new ScrollMagic.Scene({
+										triggerElement: slides[i]
+
+									})
+									.setPin(slides[i])
+									.addIndicators() // add indicators (requires plugin)
+									.addTo(controller);
+							}
+							  var pinIntroScene = new ScrollMagic.Scene({
+							    triggerElement: '.main-bg'
+							  })
+							  .setPin('.main-bg')
+							  .addIndicators() // add indicators (requires plugin)
+							  .addTo(controller);
 
 
 
 
+});							
 
-
-  // Init ScrollMagic
-  var controller = new ScrollMagic.Controller();
-// pin the intro
-  var pinIntroScene = new ScrollMagic.Scene({
-    triggerElement: '#main',
-    triggerHook: 0,
-    duration: '200%'
-  })
-  .setPin('#main')
-  .addTo(controller);
-
-  // pin again
-  var pinIntroScene2 = new ScrollMagic.Scene({
-    triggerElement: '.contact',
-    triggerHook: 0.97,
-  })
-  .setPin('#main')
-  .addTo(controller);
-
-
-  // build a scene
-  var ourScene = new ScrollMagic.Scene({
-    triggerHook: 0,
-    reverse: true
-    
-  })
-  .setClassToggle('.triangle-1', 'animacja-1') 
-  .offset(100)
-  .addTo(controller);
-
-  // build a scene
-  var ourScene2 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.triangle-2', 'animacja-2')
-  .offset(100) 
-  .addTo(controller);
-
-
-  // build a scene
-  var ourScene3 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('h1', 'fadeInUp')
-  .offset(125) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene4 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.triangle-1', 'animacja-3')
-  .offset(600) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene5 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.triangle-2', 'animacja-4')
-  .offset(600) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene6 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.second-h1', 'fadeOut')
-  .offset(600) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene7 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.first-h1', 'fadeOut')
-  .offset(600) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene8 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.rect-1', 'animacja-5')
-  .offset(700) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene9 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.about', 'fadeIn')
-  .offset(700) 
-  .addTo(controller);
-
-   // build a scene
-  var ourScene10 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.about-p', 'fadeOut-2')
-  .offset(1050) 
-  .addTo(controller);
-
-   // build a scene
-  var ourScene11 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.about-h2', 'fadeOut-2')
-  .offset(1050) 
-  .addTo(controller);
-
-   // build a scene
-  var ourScene12 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.rect-1', 'animacja-6')
-  .offset(1050) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene13 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.portfolio-box', 'fadeInUp')
-  .offset(1055) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene14 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-  .setClassToggle('.portfolio-box', 'fadeOut-2')
-  .offset(1400) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene15 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-
-  .setClassToggle('.rect-1', 'animacja-7')
-  .offset(1410) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene16 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-
-  .setClassToggle('.technology-box', 'fadeInUp')
-  .offset(1410) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene17 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-
-  .setClassToggle('.technology-box', 'fadeOut-2')
-  .offset(1750) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene17 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-
-  .setClassToggle('.rect-1', 'animacja-8')
-  .offset(1750) 
-  .addTo(controller);
-
-  // build a scene
-  var ourScene18 = new ScrollMagic.Scene({
-    reverse: true,
-    triggerHook: 0
-  })
-
-  .setClassToggle('.scroll-down', 'off')
-  .offset(1750) 
-  .addTo(controller);
-
-
-});
