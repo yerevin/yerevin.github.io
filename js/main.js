@@ -44,10 +44,50 @@ function Close() {
                     scrollTop: $(".about-section-four").offset().top
                 }, 1000);
     });
+    $(".shoes").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".shoes-section").offset().top
+                }, 2000);
+    });
+    $(".wear").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".wear-section").offset().top
+                }, 2000);
+    });
+    $(".cars").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".cars-section").offset().top
+                }, 2000);
+    });
+    $(".medic").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".medic-section").offset().top
+                }, 2000);
+    });
+    $(".furniture").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".furniture-section").offset().top
+                }, 2000);
+    });
+
+    $(window).scroll(function() {
+    var scrollPosition = $(window).scrollTop();
+
+    if(scrollPosition  > 1250) {
+        $('.arrow').css('display', 'initial');
+    }
+    else {
+        $('.arrow').css('display', 'none');
+    }
+});
 
 
-
-
+     $(".arrow").click(function (){
+            $('html, body').animate({
+                    scrollTop: 0
+            }, 1000);
+            //window.scrollTo(0,0);
+    });
             setTimeout(function() {
                   $('.logo').addClass('fadeIn');
                 }, 500);
@@ -80,14 +120,12 @@ function Close() {
 
 									})
 									.setPin(slides[i])
-									.addIndicators() // add indicators (requires plugin)
 									.addTo(controller);
 							}
 							  var pinIntroScene = new ScrollMagic.Scene({
 							    triggerElement: '.main-bg'
 							  })
 							  .setPin('.main-bg')
-							  .addIndicators() // add indicators (requires plugin)
 							  .addTo(controller);
 
 

@@ -9,7 +9,7 @@ body {
   height: 100vh; }
 
 .main-slogan {
-  padding: 20% 30% 0 30%; }
+  padding: 20% 30% 0 33%; }
   .main-slogan .logo {
     display: block;
     width: 600px;
@@ -43,13 +43,42 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 35%;
-    height: 325px;
+    width: 30%;
+    height: 300px;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
     animation-duration: 2s;
     animation-delay: 1.8s;
     animation-fill-mode: both; }
+
+.arrow {
+  display: none;
+  font-size: 4.0em;
+  z-index: 2000;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  color: #616161; }
+
+.icon-box {
+  opacity: 0;
+  animation-delay: 1.8s;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+  margin: 10% 2% 0 0; }
+  .icon-box img {
+    width: 80%;
+    height: 50px; }
+  .icon-box .caption {
+    display: block;
+    color: #FFF;
+    margin: 5px 0 0 0; }
+  .icon-box:hover {
+    content: "";
+    border-bottom: 2px solid #FFF;
+    cursor: pointer; }
 
 @keyframes fadeIn {
   0% {
@@ -186,6 +215,8 @@ body {
     font-size: 3.0em; }
   .panel p {
     font-size: 1.5em; }
+  .panel li {
+    font-size: 1.5em; }
 
 .flex-img {
   display: flex;
@@ -208,7 +239,5 @@ body {
 
 .about-section-four {
   background-color: #ddd; }
-  .about-section-four li {
-    font-size: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
