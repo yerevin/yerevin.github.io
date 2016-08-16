@@ -45,29 +45,39 @@ function Close() {
                 }, 1000);
     });
     $(".shoes").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".shoes-section").offset().top
-                }, 2000);
+                $(".shoes-section").css({transform:'translateX(0%)'})
+                setTimeout(function() {
+                  $('.slide-arrow').css('display', 'initial');
+                }, 1250);
     });
     $(".wear").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".wear-section").offset().top
-                }, 2000);
+                $(".wear-section").css({transform:'translateX(0%)'})
+                setTimeout(function() {
+                  $('.slide-arrow').css('display', 'initial');
+                }, 1250);
     });
     $(".cars").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".cars-section").offset().top
-                }, 2000);
+                $(".cars-section").css({transform:'translateX(0%)'})
+                setTimeout(function() {
+                  $('.slide-arrow').css('display', 'initial');
+                }, 1250);
     });
     $(".medic").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".medic-section").offset().top
-                }, 2000);
+                $(".medic-section").css({transform:'translateX(0%)'})
+                setTimeout(function() {
+                  $('.slide-arrow').css('display', 'initial');
+                }, 1250);
     });
     $(".furniture").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".furniture-section").offset().top
-                }, 2000);
+                $(".furniture-section").css({transform:'translateX(0%)'})
+                setTimeout(function() {
+                  $('.slide-arrow').css('display', 'initial');
+                }, 1250);
+    });
+
+    $(".slide-arrow").click(function (){ 
+        $(".panel-slide").css({transform:'translateX(100%)'})
+        $('.slide-arrow').css('display', 'none');
     });
 
     $(window).scroll(function() {
