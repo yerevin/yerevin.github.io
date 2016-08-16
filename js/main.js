@@ -48,36 +48,48 @@ function Close() {
                 $(".shoes-section").css({transform:'translateX(0%)'})
                 setTimeout(function() {
                   $('.slide-arrow').css('display', 'initial');
+                  $('body').css('overflow-y', 'hidden');
+                  $("#openNav").css('display', 'none');
                 }, 1250);
     });
     $(".wear").click(function (){
                 $(".wear-section").css({transform:'translateX(0%)'})
                 setTimeout(function() {
                   $('.slide-arrow').css('display', 'initial');
+                  $('body').css('overflow-y', 'hidden');
+                  $("#openNav").css('display', 'none');
                 }, 1250);
     });
     $(".cars").click(function (){
                 $(".cars-section").css({transform:'translateX(0%)'})
                 setTimeout(function() {
                   $('.slide-arrow').css('display', 'initial');
+                  $('body').css('overflow-y', 'hidden');
+                  $("#openNav").css('display', 'none');
                 }, 1250);
     });
     $(".medic").click(function (){
                 $(".medic-section").css({transform:'translateX(0%)'})
                 setTimeout(function() {
                   $('.slide-arrow').css('display', 'initial');
+                  $('body').css('overflow-y', 'hidden');
+                  $("#openNav").css('display', 'none');
                 }, 1250);
     });
     $(".furniture").click(function (){
                 $(".furniture-section").css({transform:'translateX(0%)'})
                 setTimeout(function() {
                   $('.slide-arrow').css('display', 'initial');
+                  $('body').css('overflow-y', 'hidden');
+                  $("#openNav").css('display', 'none');
                 }, 1250);
     });
 
     $(".slide-arrow").click(function (){ 
         $(".panel-slide").css({transform:'translateX(100%)'})
         $('.slide-arrow').css('display', 'none');
+        $('body').css('overflow-y', 'initial');
+        $('#openNav').css('display', 'initial');
     });
 
     $(window).scroll(function() {
@@ -113,33 +125,33 @@ function Close() {
 
 
 
-							// init
-							var controller = new ScrollMagic.Controller({
-								globalSceneOptions: {
-									triggerHook: 'onLeave'
-								}
-							});
+                            // init
+                            var controller = new ScrollMagic.Controller({
+                                globalSceneOptions: {
+                                    triggerHook: 'onLeave'
+                                }
+                            });
 
-							// get all slides
-							var slides = document.querySelectorAll("section.panel");
+                            // get all slides
+                            var slides = document.querySelectorAll("section.panel");
 
-							// create scene for every slide
-							for (var i=0; i<slides.length; i++) {
-								var sceneOne = new ScrollMagic.Scene({
-										triggerElement: slides[i]
+                            // create scene for every slide
+                            for (var i=0; i<slides.length; i++) {
+                                var sceneOne = new ScrollMagic.Scene({
+                                        triggerElement: slides[i]
 
-									})
-									.setPin(slides[i])
-									.addTo(controller);
-							}
-							  var pinIntroScene = new ScrollMagic.Scene({
-							    triggerElement: '.main-bg'
-							  })
-							  .setPin('.main-bg')
-							  .addTo(controller);
-
-
+                                    })
+                                    .setPin(slides[i])
+                                    .addTo(controller);
+                            }
+                              var pinIntroScene = new ScrollMagic.Scene({
+                                triggerElement: '.main-bg'
+                              })
+                              .setPin('.main-bg')
+                              .addTo(controller);
 
 
-});							
+
+
+});                         
 
