@@ -337,7 +337,7 @@ $(document).ready(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-5')
+    .setClassToggle('.rect-1', 'animacja-6')
     .offset(1050) 
     .addTo(controller);
 
@@ -368,15 +368,6 @@ $(document).ready(function(){
     .offset(1550) 
     .addTo(controller);
 
-     // build a scene
-    var ourScene12 = new ScrollMagic.Scene({
-      reverse: true,
-      triggerHook: 0
-    })
-    .setClassToggle('.rect-1', 'animacja-6')
-    .offset(1600) 
-    .addTo(controller);
-
     // build a scene
     var ourScene13 = new ScrollMagic.Scene({
       reverse: true,
@@ -393,16 +384,6 @@ $(document).ready(function(){
     })
     .setClassToggle('.portfolio-box', 'fadeOut-2')
     .offset(2700) 
-    .addTo(controller);
-
-    // build a scene
-    var ourScene15 = new ScrollMagic.Scene({
-      reverse: true,
-      triggerHook: 0
-    })
-
-    .setClassToggle('.rect-1', 'animacja-7')
-    .offset(2750) 
     .addTo(controller);
 
     // build a scene
