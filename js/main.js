@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+
+  var windowHeight = window.innerHeight;
+  var windowWidth = window.innerWidth;
+  var tabletWidth = 1024;
+  var tabletSmallWidth = 800;
+  var smallScreenWidth = 600;
+
+
     $(window).on('resize', res);
     res();
 
@@ -6,7 +15,12 @@ function res() {
     $('.main-bg').css('height',$(window).height()+'px');
 }
 
-
+$(window).scroll(function(){
+            var scrollTop = 80;
+            if($(window).scrollTop() >= windowHeight){
+                  console.log('cale okno przeskrolowane przeskrolowane');
+                }
+            });
 
 
    /*  MENU FUNCTIONALITY */
@@ -64,11 +78,6 @@ function res() {
     });
 
 
-  var windowHeight = window.innerHeight;
-  var windowWidth = window.innerWidth;
-  var tabletWidth = 1024;
-  var tabletSmallWidth = 800;
-  var smallScreenWidth = 600;
 
 
 
@@ -84,7 +93,7 @@ function res() {
     var pinIntroScene = new ScrollMagic.Scene({
       triggerElement: '#main',
       triggerHook: 0,
-      duration: '200%'
+      duration: '500%'
     })
     .setPin('#main')
     .addTo(controller);
@@ -123,7 +132,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.triangle-1', 'animacja-3')
-    .offset(600) 
+    .offset(100+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -132,7 +141,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.triangle-2', 'animacja-4')
-    .offset(600) 
+    .offset(100+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -141,7 +150,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.second-h1', 'fadeOut')
-    .offset(600) 
+    .offset(100+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -150,7 +159,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.first-h1', 'fadeOut')
-    .offset(600) 
+    .offset(100+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -159,7 +168,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.rect-1', 'animacja-5')
-    .offset(700) 
+    .offset(200+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -168,7 +177,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.about', 'fadeIn')
-    .offset(700) 
+    .offset(200+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -177,7 +186,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.about-p', 'fadeOut-2')
-    .offset(1050) 
+    .offset(200+windowHeight+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -186,7 +195,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.about-h2', 'fadeOut-2')
-    .offset(1050) 
+    .offset(200+windowHeight+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -195,7 +204,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.rect-1', 'animacja-6')
-    .offset(1050) 
+    .offset(250+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -204,7 +213,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeInUp')
-    .offset(1055) 
+    .offset(255+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -213,7 +222,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeOut-2')
-    .offset(1400) 
+    .offset(255+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -223,7 +232,7 @@ function res() {
     })
 
     .setClassToggle('.rect-1', 'animacja-7')
-    .offset(1410) 
+    .offset(260+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -233,7 +242,7 @@ function res() {
     })
 
     .setClassToggle('.technology-box', 'fadeInUp')
-    .offset(1410) 
+    .offset(265+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -243,7 +252,7 @@ function res() {
     })
 
     .setClassToggle('.technology-box', 'fadeOut-2')
-    .offset(1750) 
+    .offset(265+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -253,7 +262,7 @@ function res() {
     })
 
     .setClassToggle('.rect-1', 'animacja-8')
-    .offset(1750) 
+    .offset(270+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -263,7 +272,7 @@ function res() {
     })
 
     .setClassToggle('.scroll-down', 'off')
-    .offset(1750) 
+    .offset(175) 
     .addTo(controller);
   }
   else {
