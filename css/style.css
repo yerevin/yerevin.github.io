@@ -242,7 +242,7 @@ svg {
   opacity: 0; }
 
 .rect-1 {
-  position: fixed;
+  position: relative;
   opacity: 0; }
 
 /* close */
