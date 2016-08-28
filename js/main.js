@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
+   /*  RESPONSIVE RESIZING */
 
+    $(window).on('resize', res);
+    res();
+
+   function res() {
+       $('.main-bg').css('height',$(window).height()+'px');
+   }
 
    /*  MENU FUNCTIONALITY */
 
