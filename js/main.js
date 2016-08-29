@@ -7,11 +7,7 @@ $(document).ready(function(){
   var tabletSmallWidth = 800;
   var smallScreenWidth = 600;
 
-<<<<<<< HEAD
   $('.background-box').css('height', windowHeight*4.5+'px');
-=======
-  $('.background-box').css('height', 400+windowHeight*4+'px');
->>>>>>> origin/master
 
     $(window).on('resize', res);
     res();
