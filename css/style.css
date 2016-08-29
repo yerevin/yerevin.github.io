@@ -686,6 +686,7 @@ svg {
     -webkit-transform: none;
     transform: none; } }
 .fadeOut {
+  opacity: 0 !important;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
   -webkit-animation-duration: 1s;
@@ -695,21 +696,21 @@ svg {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  opacity: 0 !important; }
+  }
 
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
     filter: alpha(opacity=1); }
   100% {
-    opacity: 0;
+    opacity: 0 !important;
     filter: alpha(opacity=0); } }
 @keyframes fadeOut {
   0% {
     opacity: 1;
     filter: alpha(opacity=1); }
   100% {
-    opacity: 0;
+    opacity: 0 !important;
     filter: alpha(opacity=0); } }
 .fadeOut-2 {
   -webkit-animation-name: fadeOut-2;
