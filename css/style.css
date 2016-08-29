@@ -1169,10 +1169,12 @@ svg {
   /* close */
   /* menu screen */
   .fullscreen li:nth-child(odd) {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    margin: 6% 0 6% 0; }
 
   .fullscreen li:nth-child(even) {
-    font-size: 5.5em; }
+    font-size: 5.5em;
+    margin: 6% 0 6% 0; }
 
   /* close */
   /* svg animations */
@@ -1414,10 +1416,12 @@ svg {
   /* close */
   /* menu screen */
   .fullscreen li:nth-child(odd) {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    margin: 6% 0 6% 0; }
 
   .fullscreen li:nth-child(even) {
-    font-size: 5.5em; }
+    font-size: 5.5em;
+    margin: 6% 0 6% 0; }
 
   /* close */
   /* svg animations */
