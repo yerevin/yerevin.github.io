@@ -1,6 +1,5 @@
 /*
 Author:Mateusz Skulski
-Credit:scroll-down-icon by Jon Irvine from the Noun Project;
 */
 /* general */
 body {
@@ -32,6 +31,15 @@ svg {
   background-size: 100% 100%; }
 
 /* close */
+.background-box {
+  position: absolute;
+  top: 150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 35, 55, 0.8), rgba(25, 104, 136, 0.8), rgba(115, 170, 221, 0.8));
+  transform: translate(100%, 0);
+  opacity: 0; }
+
 /* menu icon */
 .c-hamburger {
   display: block;
@@ -208,10 +216,6 @@ svg {
   -webkit-transform: translate(0, 0) rotate(180deg);
   -ms-transform: translate(0, 0) rotate(180deg);
   transform: translate(0, 0) rotate(180deg);
-  opacity: 0; }
-
-.rect-1 {
-  position: relative;
   opacity: 0; }
 
 /* close */
@@ -504,7 +508,8 @@ svg {
   color: #FFF; }
 
 .portfolio-box h2 {
-  font-size: 4.0em; }
+  font-size: 4.0em;
+  margin: 5% 0 5% 0; }
 
 .portfolio-flex {
   display: -webkit-box;
@@ -517,7 +522,7 @@ svg {
   justify-content: center; }
 
 .project-box {
-  margin: 50px 2% 50px 2%; }
+  margin: 0 2% 50px 2%; }
 
 .project-box p {
   margin: 20px 0 0 0;
@@ -605,11 +610,10 @@ svg {
   max-width: 100%;
   height: 100vh;
   background-color: #000; }
-
-h2 {
-  font-size: 3.0em;
-  color: #FFF;
-  margin: 10% 0 7% 0; }
+  .contact h2 {
+    font-size: 3.0em;
+    color: #FFF;
+    margin: 10% 0 7% 0; }
 
 .social-flex img {
   margin: 25% 0 0 0;
@@ -682,6 +686,7 @@ h2 {
     -webkit-transform: none;
     transform: none; } }
 .fadeOut {
+  opacity: 0 !important;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
   -webkit-animation-duration: 1s;
@@ -694,15 +699,15 @@ h2 {
 
 @-webkit-keyframes fadeOut {
   0% {
-    opacity: 0;
-    filter: alpha(opacity=0); }
+    opacity: 1;
+    filter: alpha(opacity=1); }
   100% {
-    opacity: 0;
+    opacity: 0 !important;
     filter: alpha(opacity=0); } }
 @keyframes fadeOut {
   0% {
-    opacity: 0;
-    filter: alpha(opacity=0); }
+    opacity: 1;
+    filter: alpha(opacity=1); }
   100% {
     opacity: 0;
     filter: alpha(opacity=0); } }
@@ -989,7 +994,6 @@ h2 {
     100% {
       -webkit-transform: translate(-100%, 0);
       transform: translate(-100%, 0); } }
-  /* close */
   /* close */ }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
@@ -1058,7 +1062,7 @@ h2 {
   .about {
     position: absolute;
     text-align: center;
-    top: 265%;
+    top: 225%;
     left: 0%;
     opacity: 0; }
 
@@ -1083,7 +1087,7 @@ h2 {
   /* close */
   /* portfolio section */
   .portfolio-box {
-    top: 315%; }
+    top: 300%; }
 
   .portfolio-box h2 {
     font-size: 2.5em; }
@@ -1110,7 +1114,7 @@ h2 {
     position: absolute;
     margin: 0 auto 0 auto;
     text-align: center;
-    top: 545%;
+    top: 475%;
     width: 100%;
     height: auto;
     color: #FFF; }

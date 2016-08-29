@@ -7,6 +7,7 @@ $(document).ready(function(){
   var tabletSmallWidth = 800;
   var smallScreenWidth = 600;
 
+  $('.background-box').css('height', windowHeight*4.5+'px');
 
     $(window).on('resize', res);
     res();
@@ -14,13 +15,6 @@ $(document).ready(function(){
 function res() {
     $('.main-bg').css('height',$(window).height()+'px');
 }
-
-$(window).scroll(function(){
-            var scrollTop = 80;
-            if($(window).scrollTop() >= windowHeight){
-                  console.log('cale okno przeskrolowane przeskrolowane');
-                }
-            });
 
 
    /*  MENU FUNCTIONALITY */
@@ -167,7 +161,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-5')
+    .setClassToggle('.background-box', 'animacja-5')
     .offset(200+windowHeight) 
     .addTo(controller);
 
@@ -203,7 +197,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-6')
+    .setClassToggle('.background-box', 'animacja-6')
     .offset(250+windowHeight+windowHeight) 
     .addTo(controller);
 
@@ -231,7 +225,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
 
-    .setClassToggle('.rect-1', 'animacja-7')
+    .setClassToggle('.background-box', 'animacja-7')
     .offset(260+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
@@ -261,7 +255,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
 
-    .setClassToggle('.rect-1', 'animacja-8')
+    .setClassToggle('.background-box', 'animacja-8')
     .offset(270+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
@@ -279,7 +273,7 @@ $(window).scroll(function(){
     var pinIntroScene = new ScrollMagic.Scene({
       triggerElement: '#main',
       triggerHook: 0,
-      duration: '600%'
+      duration: '500%'
     })
     .setPin('#main')
     .addTo(controller);
@@ -289,8 +283,8 @@ $(window).scroll(function(){
       reverse: true
       
     })
-    .setClassToggle('.triangle-1', 'animacja-1') 
-    .offset(300)
+    .setClassToggle('.triangle-1', 'fadeIn') 
+    .offset(240)
     .addTo(controller);
 
     // build a scene
@@ -298,8 +292,8 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.triangle-2', 'animacja-2')
-    .offset(300) 
+    .setClassToggle('.triangle-2', 'fadeIn')
+    .offset(240) 
     .addTo(controller);
 
 
@@ -309,7 +303,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('h1', 'fadeInUp')
-    .offset(350) 
+    .offset(250) 
     .addTo(controller);
 
     // build a scene
@@ -317,8 +311,8 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.triangle-1', 'animacja-3')
-    .offset(900) 
+    .setClassToggle('.triangle-1', 'fadeOut')
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -326,8 +320,8 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.triangle-2', 'animacja-4')
-    .offset(900) 
+    .setClassToggle('.triangle-2', 'fadeOut')
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -336,7 +330,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.second-h1', 'fadeOut')
-    .offset(875) 
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -345,7 +339,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.first-h1', 'fadeOut')
-    .offset(875) 
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -353,8 +347,8 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-6')
-    .offset(1050) 
+    .setClassToggle('.background-box', 'animacja-6')
+    .offset(300+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -363,7 +357,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.about', 'fadeIn')
-    .offset(1150) 
+    .offset(350+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -372,7 +366,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.about-p', 'fadeOut-2')
-    .offset(1550) 
+    .offset(350+windowHeight+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -381,7 +375,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.about-h2', 'fadeOut-2')
-    .offset(1550) 
+    .offset(350+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -390,7 +384,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeInUp')
-    .offset(1650) 
+    .offset(365+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -399,7 +393,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeOut-2')
-    .offset(2700) 
+    .offset(850+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -409,7 +403,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.technology-box', 'fadeInUp')
-    .offset(2800) 
+    .offset(850+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -419,7 +413,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.technology-box', 'fadeOut-2')
-    .offset(3250) 
+    .offset(850+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -428,8 +422,8 @@ $(window).scroll(function(){
       triggerHook: 0
     })
 
-    .setClassToggle('.rect-1', 'animacja-8')
-    .offset(3300) 
+    .setClassToggle('.background-box', 'animacja-8')
+    .offset(865+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -439,7 +433,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.scroll-down', 'off')
-    .offset(300) 
+    .offset(200) 
     .addTo(controller);
   }
 
