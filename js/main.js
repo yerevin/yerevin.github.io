@@ -216,7 +216,7 @@ function res() {
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeOut-2')
-    .offset(255+windowHeight+windowHeight+windowHeight) 
+    .offset(400+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -226,7 +226,7 @@ function res() {
     })
 
     .setClassToggle('.background-box', 'animacja-7')
-    .offset(260+windowHeight+windowHeight+windowHeight) 
+    .offset(405+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -236,7 +236,7 @@ function res() {
     })
 
     .setClassToggle('.technology-box', 'fadeInUp')
-    .offset(265+windowHeight+windowHeight+windowHeight) 
+    .offset(410+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -246,7 +246,7 @@ function res() {
     })
 
     .setClassToggle('.technology-box', 'fadeOut-2')
-    .offset(265+windowHeight+windowHeight+windowHeight+windowHeight) 
+    .offset(415+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -256,7 +256,7 @@ function res() {
     })
 
     .setClassToggle('.background-box', 'animacja-8')
-    .offset(270+windowHeight+windowHeight+windowHeight+windowHeight) 
+    .offset(420+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -277,25 +277,6 @@ function res() {
     })
     .setPin('#main')
     .addTo(controller);
-      // build a scene
-    var ourScene = new ScrollMagic.Scene({
-      triggerHook: 0,
-      reverse: true
-      
-    })
-    .setClassToggle('.triangle-1', 'fadeIn') 
-    .offset(240)
-    .addTo(controller);
-
-    // build a scene
-    var ourScene2 = new ScrollMagic.Scene({
-      reverse: true,
-      triggerHook: 0
-    })
-    .setClassToggle('.triangle-2', 'fadeIn')
-    .offset(240) 
-    .addTo(controller);
-
 
     // build a scene
     var ourScene3 = new ScrollMagic.Scene({
@@ -304,24 +285,6 @@ function res() {
     })
     .setClassToggle('h1', 'fadeInUp')
     .offset(250) 
-    .addTo(controller);
-
-    // build a scene
-    var ourScene4 = new ScrollMagic.Scene({
-      reverse: true,
-      triggerHook: 0
-    })
-    .setClassToggle('.triangle-1', 'fadeOut')
-    .offset(250+windowHeight) 
-    .addTo(controller);
-
-    // build a scene
-    var ourScene5 = new ScrollMagic.Scene({
-      reverse: true,
-      triggerHook: 0
-    })
-    .setClassToggle('.triangle-2', 'fadeOut')
-    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene

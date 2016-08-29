@@ -157,6 +157,9 @@ svg {
   list-style: none;
   font-weight: bold;
   font-size: 3.5em;
+  left: 0;
+  text-align: center;
+  width: 100%;
   color: #FFF;
   margin: 4.5% 0 5% 0;
   cursor: pointer;
@@ -166,6 +169,9 @@ svg {
   list-style: none;
   font-weight: bold;
   font-size: 9.5em;
+  left: 0;
+  text-align: center;
+  width: 100%;
   color: #FFF;
   margin: -5% 0 2% 0;
   line-height: 0.2;
@@ -178,9 +184,11 @@ svg {
 /* scroll icon */
 .scroll-down {
   position: fixed;
-  text-align: center;
   bottom: 5px;
   font-size: 5.0em;
+  left: 0;
+  text-align: center;
+  width: 100%;
   font-weight: bold;
   color: #000;
   -webkit-animation-name: scrolling-down;
@@ -454,12 +462,10 @@ svg {
   font-size: 4.0em;
   color: #FFF;
   position: fixed;
-  top: 41%;
-  left: 36%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
+  top: 42%;
+  left: 0;
+  text-align: center;
+  width: 100%;
   opacity: 0;
   filter: alpha(opacity=0); }
 
@@ -467,12 +473,10 @@ svg {
   font-size: 4.0em;
   color: #FFF;
   position: fixed;
-  top: 48%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
   opacity: 0;
   filter: alpha(opacity=0); }
 
@@ -695,8 +699,7 @@ svg {
   animation-fill-mode: both;
   -webkit-transform: none;
   -ms-transform: none;
-  transform: none;
-  }
+  transform: none; }
 
 @-webkit-keyframes fadeOut {
   0% {
@@ -710,7 +713,7 @@ svg {
     opacity: 1;
     filter: alpha(opacity=1); }
   100% {
-    opacity: 0 !important;
+    opacity: 0;
     filter: alpha(opacity=0); } }
 .fadeOut-2 {
   -webkit-animation-name: fadeOut-2;
@@ -760,8 +763,371 @@ svg {
 /* Media queries
 -------------------------------------------------- */
 /* Large desktops and laptops */
+@media (min-width: 1200px) and (max-width: 1350px) {
+  /* menu screen */
+  .fullscreen li:nth-child(odd) {
+    font-size: 3.5em; }
+
+  .fullscreen li:nth-child(even) {
+    font-size: 6.0em; }
+
+  /* close */
+  .technology-box {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    margin: 0 0 0 3%;
+    top: 400%;
+    width: 50%;
+    height: auto;
+    color: #FFF; }
+
+  .technology-box h2 {
+    font-size: 3.5em; }
+
+  .tech-icon-box {
+    padding: 10% 0 0 2%; }
+
+  .tech-icon-box i {
+    margin: 0 10% 0 0;
+    font-size: 5.0em; }
+
+  .inner-box {
+    margin: 0 auto;
+    height: 275px;
+    width: 100%; }
+
+  .social-flex img {
+    margin: 10% 0 0 0;
+    width: 45px;
+    height: 45px; }
+
+  /* close */ }
 /* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* menu screen */
+  .fullscreen li:nth-child(odd) {
+    font-size: 3.0em; }
+
+  .fullscreen li:nth-child(even) {
+    font-size: 6.0em; }
+
+  /* close */
+  /* svg animations */
+  /* close */
+  /* intro slogan */
+  .first-h1 {
+    font-size: 3em;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+
+  .second-h1 {
+    font-size: 2.5em;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+
+  /* close */
+  /* about me */
+  .about {
+    position: absolute;
+    top: 200%;
+    left: 55%;
+    opacity: 0; }
+
+  .about-h2 {
+    font-size: 3.25em;
+    color: #FFF;
+    margin: 0;
+    opacity: 1; }
+
+  .about-p {
+    font-size: 2.0em;
+    color: #FFF;
+    margin: 5% 0 0 0;
+    opacity: 1; }
+
+  /* close */
+  /* portfolio section */
+  .portfolio-box {
+    top: 265%; }
+
+  .portfolio-box h2 {
+    font-size: 3.0em; }
+
+  .portfolio-flex {
+    display: block; }
+
+  .project-box {
+    margin: 25px 0 25px 0; }
+
+  .project-box p {
+    font-size: 1.85em; }
+
+  .inner-box {
+    margin: 0 auto;
+    height: 275px;
+    width: 100%; }
+
+  /* close */
+  /* technology section */
+  .technology-box {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    margin: 0 0 0 3%;
+    top: 400%;
+    width: 50%;
+    height: auto;
+    color: #FFF; }
+
+  .technology-box h2 {
+    font-size: 2.75em; }
+
+  .tech-icon-box {
+    padding: 10% 0 0 0; }
+
+  .tech-icon-box i {
+    margin: 0 10% 0 0;
+    font-size: 4.0em; }
+
+  .st-4 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto; }
+
+  .nd-4 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto; }
+
+  .rd-2 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto; }
+
+  /* close */
+  /* contact section */
+  .contact {
+    opacity: 0.8;
+    z-index: 3;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #000; }
+
+  h2 {
+    font-size: 3.0em;
+    color: #FFF;
+    margin: 10% 0 7% 0; }
+
+  .contact-btn {
+    margin: 0 0 0 35%; }
+
+  .social-flex img {
+    margin: 1% 0 0 0;
+    width: 45px;
+    height: 45px; }
+
+  /* close */ }
 /* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* menu icon */
+  .c-hamburger {
+    width: 48px;
+    height: 48px; }
+
+  .menuline-1 {
+    height: 6px; }
+
+  .menuline-2 {
+    height: 6px; }
+
+  .menuline-3 {
+    height: 6px; }
+
+  /* close */
+  /* menu icon's animations */
+  @keyframes menurot {
+    0% {
+      transform: translate(0px, 0px) rotate(0); }
+    100% {
+      transform: translate(0px, 18px) rotate(45deg); } }
+  @keyframes menurot2 {
+    0% {
+      transform: translate(0px, 0px) rotate(0); }
+    100% {
+      transform: translate(0px, -15px) rotate(-45deg); } }
+  @keyframes menurot-rev {
+    0% {
+      transform: translate(0px, 18px) rotate(45deg); }
+    100% {
+      transform: translate(0px, 0px) rotate(0); } }
+  @keyframes menurot2-rev {
+    0% {
+      transform: translate(0px, -15px) rotate(-45deg); }
+    100% {
+      transform: translate(0px, 0px) rotate(0); } }
+  /* close */
+  /* menu screen */
+  .fullscreen li:nth-child(odd) {
+    font-size: 2.5em; }
+
+  .fullscreen li:nth-child(even) {
+    font-size: 5.5em; }
+
+  /* close */
+  /* svg animations */
+  /* close */
+  /* intro slogan */
+  .first-h1 {
+    font-size: 3em;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+
+  .second-h1 {
+    font-size: 2.5em;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+
+  /* close */
+  /* about me */
+  .about {
+    position: absolute;
+    top: 200%;
+    left: 55%;
+    opacity: 0; }
+
+  .about-h2 {
+    font-size: 3.0em;
+    color: #FFF;
+    margin: 0;
+    opacity: 1; }
+
+  .about-p {
+    font-size: 2.0em;
+    color: #FFF;
+    margin: 5% 0 0 0;
+    opacity: 1; }
+
+  /* close */
+  /* portfolio section */
+  .portfolio-box {
+    top: 265%; }
+
+  .portfolio-box h2 {
+    font-size: 2.5em; }
+
+  .portfolio-flex {
+    display: block; }
+
+  .project-box {
+    margin: 25px 0 25px 0; }
+
+  .project-box p {
+    font-size: 1.85em; }
+
+  .inner-box {
+    margin: 0 auto;
+    height: 250px;
+    width: 80%; }
+
+  .to-do {
+    width: 50%; }
+
+  /* close */
+  /* technology section */
+  .technology-box {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    margin: 0 0 0 3%;
+    top: 400%;
+    width: 50%;
+    height: auto;
+    color: #FFF; }
+
+  .technology-box h2 {
+    font-size: 2.75em; }
+
+  .tech-icon-box {
+    padding: 10% 0 0 1%; }
+
+  .tech-icon-box i {
+    margin: 0 10% 0 0;
+    font-size: 4.0em; }
+
+  .st-4 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto; }
+
+  .nd-4 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto; }
+
+  .rd-2 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto; }
+
+  /* close */
+  /* contact section */
+  .contact {
+    opacity: 0.8;
+    z-index: 3;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #000; }
+
+  h2 {
+    font-size: 3.0em;
+    color: #FFF;
+    margin: 10% 0 7% 0; }
+
+  .contact-btn {
+    float: right; }
+
+  .social-flex {
+    clear: both; }
+
+  .social-flex img {
+    margin: 5% 0 0 0;
+    width: 45px;
+    height: 45px; }
+
+  /* close */ }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   /* menu icon */
@@ -813,23 +1179,27 @@ svg {
   /* close */
   /* intro slogan */
   .first-h1 {
-    font-size: 2.5em;
-    top: 35%;
-    left: 35.5%; }
-    .first-h1 span {
-      display: block; }
+    font-size: 3em;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold; }
 
   .second-h1 {
-    font-size: 2.25em;
+    font-size: 2.5em;
     top: 50%;
-    left: 29%; }
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold; }
 
   /* close */
   /* about me */
   .about {
     position: absolute;
     text-align: center;
-    top: 265%;
+    top: 225%;
     left: 0%;
     opacity: 0; }
 
@@ -854,7 +1224,7 @@ svg {
   /* close */
   /* portfolio section */
   .portfolio-box {
-    top: 315%; }
+    top: 300%; }
 
   .portfolio-box h2 {
     font-size: 2.5em; }
@@ -881,7 +1251,7 @@ svg {
     position: absolute;
     margin: 0 auto 0 auto;
     text-align: center;
-    top: 545%;
+    top: 475%;
     width: 100%;
     height: auto;
     color: #FFF; }
@@ -944,10 +1314,11 @@ svg {
     clear: both; }
 
   .social-flex img {
-    margin: 10% 0 0 0;
+    margin: 5% 0 0 0;
     width: 45px;
     height: 45px; }
 
+  /* close */
   /* svg icons' animations */
   .animacja-6 {
     -webkit-animation-name: rect-2-animation;
@@ -995,7 +1366,13 @@ svg {
     100% {
       -webkit-transform: translate(-100%, 0);
       transform: translate(-100%, 0); } }
-  /* close */ }
+  /* close */
+  /* svg icons */
+  .triangle-1 {
+    display: none; }
+
+  .triangle-2 {
+    display: none; } }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   /* menu icon */
@@ -1047,16 +1424,20 @@ svg {
   /* close */
   /* intro slogan */
   .first-h1 {
-    font-size: 2.5em;
-    top: 35%;
-    left: 35.5%; }
-    .first-h1 span {
-      display: block; }
+    font-size: 3em;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold; }
 
   .second-h1 {
-    font-size: 2.25em;
+    font-size: 2.5em;
     top: 50%;
-    left: 29%; }
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold; }
 
   /* close */
   /* about me */
@@ -1230,7 +1611,13 @@ svg {
     100% {
       -webkit-transform: translate(-100%, 0);
       transform: translate(-100%, 0); } }
-  /* close */ }
+  /* close */
+  /* svg icons */
+  .triangle-1 {
+    display: none; }
+
+  .triangle-2 {
+    display: none; } }
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
