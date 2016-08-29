@@ -290,7 +290,7 @@ $(window).scroll(function(){
       
     })
     .setClassToggle('.triangle-1', 'animacja-1') 
-    .offset(300)
+    .offset(200)
     .addTo(controller);
 
     // build a scene
@@ -299,7 +299,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.triangle-2', 'animacja-2')
-    .offset(300) 
+    .offset(200) 
     .addTo(controller);
 
 
@@ -309,7 +309,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('h1', 'fadeInUp')
-    .offset(350) 
+    .offset(250) 
     .addTo(controller);
 
     // build a scene
@@ -318,7 +318,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.triangle-1', 'animacja-3')
-    .offset(900) 
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -327,7 +327,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.triangle-2', 'animacja-4')
-    .offset(900) 
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -336,7 +336,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.second-h1', 'fadeOut')
-    .offset(875) 
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -345,7 +345,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.first-h1', 'fadeOut')
-    .offset(875) 
+    .offset(250+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -354,7 +354,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.rect-1', 'animacja-6')
-    .offset(1050) 
+    .offset(300+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -363,7 +363,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.about', 'fadeIn')
-    .offset(1150) 
+    .offset(350+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -372,7 +372,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.about-p', 'fadeOut-2')
-    .offset(1550) 
+    .offset(350+windowHeight+windowHeight) 
     .addTo(controller);
 
      // build a scene
@@ -381,7 +381,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.about-h2', 'fadeOut-2')
-    .offset(1550) 
+    .offset(350+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -390,7 +390,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeInUp')
-    .offset(1650) 
+    .offset(365+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -399,7 +399,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
     .setClassToggle('.portfolio-box', 'fadeOut-2')
-    .offset(2700) 
+    .offset(850+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -409,7 +409,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.technology-box', 'fadeInUp')
-    .offset(2800) 
+    .offset(850+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -419,7 +419,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.technology-box', 'fadeOut-2')
-    .offset(3250) 
+    .offset(850+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -429,7 +429,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.rect-1', 'animacja-8')
-    .offset(3300) 
+    .offset(865+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
     // build a scene
@@ -439,7 +439,7 @@ $(window).scroll(function(){
     })
 
     .setClassToggle('.scroll-down', 'off')
-    .offset(300) 
+    .offset(200) 
     .addTo(controller);
   }
 
