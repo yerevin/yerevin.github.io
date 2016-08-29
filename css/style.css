@@ -695,7 +695,8 @@ svg {
   animation-fill-mode: both;
   -webkit-transform: none;
   -ms-transform: none;
-  transform: none; }
+  transform: none;
+  }
 
 @-webkit-keyframes fadeOut {
   0% {
@@ -709,7 +710,7 @@ svg {
     opacity: 1;
     filter: alpha(opacity=1); }
   100% {
-    opacity: 0;
+    opacity: 0 !important;
     filter: alpha(opacity=0); } }
 .fadeOut-2 {
   -webkit-animation-name: fadeOut-2;
