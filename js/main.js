@@ -7,6 +7,7 @@ $(document).ready(function(){
   var tabletSmallWidth = 800;
   var smallScreenWidth = 600;
 
+  $('.background-box').css('height', 400+windowHeight*4+'px');
 
     $(window).on('resize', res);
     res();
@@ -14,13 +15,6 @@ $(document).ready(function(){
 function res() {
     $('.main-bg').css('height',$(window).height()+'px');
 }
-
-$(window).scroll(function(){
-            var scrollTop = 80;
-            if($(window).scrollTop() >= windowHeight){
-                  console.log('cale okno przeskrolowane przeskrolowane');
-                }
-            });
 
 
    /*  MENU FUNCTIONALITY */
@@ -167,7 +161,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-5')
+    .setClassToggle('.background-box', 'animacja-5')
     .offset(200+windowHeight) 
     .addTo(controller);
 
@@ -203,7 +197,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-6')
+    .setClassToggle('.background-box', 'animacja-6')
     .offset(250+windowHeight+windowHeight) 
     .addTo(controller);
 
@@ -231,7 +225,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
 
-    .setClassToggle('.rect-1', 'animacja-7')
+    .setClassToggle('.background-box', 'animacja-7')
     .offset(260+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
@@ -261,7 +255,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
 
-    .setClassToggle('.rect-1', 'animacja-8')
+    .setClassToggle('.background-box', 'animacja-8')
     .offset(270+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
@@ -279,7 +273,7 @@ $(window).scroll(function(){
     var pinIntroScene = new ScrollMagic.Scene({
       triggerElement: '#main',
       triggerHook: 0,
-      duration: '600%'
+      duration: '500%'
     })
     .setPin('#main')
     .addTo(controller);
@@ -289,8 +283,8 @@ $(window).scroll(function(){
       reverse: true
       
     })
-    .setClassToggle('.triangle-1', 'animacja-1') 
-    .offset(200)
+    .setClassToggle('.triangle-1', 'fadeIn') 
+    .offset(240)
     .addTo(controller);
 
     // build a scene
@@ -298,8 +292,8 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.triangle-2', 'animacja-2')
-    .offset(200) 
+    .setClassToggle('.triangle-2', 'fadeIn')
+    .offset(240) 
     .addTo(controller);
 
 
@@ -317,7 +311,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.triangle-1', 'animacja-3')
+    .setClassToggle('.triangle-1', 'fadeOut')
     .offset(250+windowHeight) 
     .addTo(controller);
 
@@ -326,7 +320,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.triangle-2', 'animacja-4')
+    .setClassToggle('.triangle-2', 'fadeOut')
     .offset(250+windowHeight) 
     .addTo(controller);
 
@@ -353,7 +347,7 @@ $(window).scroll(function(){
       reverse: true,
       triggerHook: 0
     })
-    .setClassToggle('.rect-1', 'animacja-6')
+    .setClassToggle('.background-box', 'animacja-6')
     .offset(300+windowHeight) 
     .addTo(controller);
 
@@ -428,7 +422,7 @@ $(window).scroll(function(){
       triggerHook: 0
     })
 
-    .setClassToggle('.rect-1', 'animacja-8')
+    .setClassToggle('.background-box', 'animacja-8')
     .offset(865+windowHeight+windowHeight+windowHeight+windowHeight) 
     .addTo(controller);
 
